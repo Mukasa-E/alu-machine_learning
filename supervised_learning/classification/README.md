@@ -47,4 +47,4 @@ Training and evaluation use three datasets stored in `../data/`:
 
 ## Author
 
-Emmanuel Mukasa
+Mukasa Simiyu
