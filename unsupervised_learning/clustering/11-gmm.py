@@ -11,3 +11,4 @@ def gmm(X, k):
     clss = model.predict(X)
     return (model.weights_, model.means_, model.covariances_, clss,
             model.bic(X))
+    

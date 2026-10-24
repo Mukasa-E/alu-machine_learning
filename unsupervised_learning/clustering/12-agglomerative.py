@@ -12,3 +12,4 @@ def agglomerative(X, dist):
     plt.show()
     return scipy.cluster.hierarchy.fcluster(
         linkage, t=dist, criterion='distance')
+    
