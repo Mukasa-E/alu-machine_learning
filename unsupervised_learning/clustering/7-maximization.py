@@ -10,7 +10,7 @@ def maximization(X, g):
             not isinstance(g, np.ndarray) or g.ndim != 2 or
             X.shape[0] == 0 or X.shape[1] == 0 or
             g.shape[1] != X.shape[0] or g.shape[0] == 0 or
-            np.any(g < 0) or not np.allclose(np.sum(g, axis=0), 1)):
+            not np.allclose(np.sum(g, axis=0), 1)):
         return None, None, None
 
     totals = np.sum(g, axis=1)
