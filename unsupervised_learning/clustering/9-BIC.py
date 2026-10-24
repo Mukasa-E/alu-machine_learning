@@ -21,7 +21,7 @@ def BIC(X, kmin=1, kmax=None, iterations=1000, tol=1e-5, verbose=False):
 
     if kmax is None:
         kmax = X.shape[0]
-    if kmax < kmin:
+    if kmax <= kmin:
         return failure
 
     cluster_counts = range(kmin, kmax + 1)
