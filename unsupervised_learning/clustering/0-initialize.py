@@ -13,10 +13,3 @@ def initialize(X, k):
 
     return np.random.uniform(np.min(X, axis=0), np.max(X, axis=0),
                              size=(k, X.shape[1]))
-    
-
-
-
-
-
-    
